@@ -1,0 +1,13 @@
+Package: TableAnalysis
+Type: Package
+Title: Package to Analyze Data Tables
+Version: 0.1.0
+Author: James R. Allison
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 2.10)
