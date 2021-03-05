@@ -9,7 +9,7 @@ for (i in 1:rows) {
 for (i in 1:cols){
   column_total[i] <- sum(Table[1:rows, i])
 }
-column_total[rows+1] <- sum(column_total)
+column_total[cols+1] <- sum(column_total)
 Table <- cbind(Table,row_total)
 return(rbind(Table,column_total))
 }
