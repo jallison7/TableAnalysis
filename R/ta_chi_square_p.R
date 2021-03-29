@@ -1,4 +1,4 @@
-ta_chisq_p <- function(Table) {
+ta_chi_square_p <- function(Table) {
   rows <- nrow(Table)
   cols <- ncol(Table)
   x <- ta_chi_square(Table)
