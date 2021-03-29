@@ -1,8 +1,9 @@
-ta_resample_Chisq <- function(Table, iterations) {
+ta_resample_chi_square <- function(Table, iterations) {
   rows <- nrow(Table)
   cols <- ncol(Table)
   N <- ta_add_totals(Table)[rows+1, cols+1]
-  proportions <- as.data.frame(Table/N)
+  expected <- ta_expected(Table)
+  proportions <- as.data.frame(expected/N)
   prob <- stack(proportions)
 
   chi_square_resampling <- vector(mode = "numeric", length = iterations)
